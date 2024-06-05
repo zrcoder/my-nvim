@@ -1,4 +1,14 @@
 return {
+	"Pocco81/auto-save.nvim",
+	config = function()
+		require("auto-save").setup({
+			execution_message = {
+				message = function()
+					return ""
+				end,
+			},
+		})
+	end,
 	-- Editor support.
 	-- The next few plugins are really the IDE feel.
 	{
